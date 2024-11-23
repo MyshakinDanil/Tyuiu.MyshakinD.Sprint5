@@ -4,7 +4,7 @@ namespace Tyuiu.MyshakinD.Sprint5.Task5.V16.Lib {
     public class DataService : ISprint5Task5V16 {
         public double LoadFromDataFile(string path)
         {
-            double res = double.NegativeInfinity;
+            double res = -999;
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
