@@ -7,11 +7,12 @@ namespace Tyuiu.MyshakinD.Sprint5.Task5.V16.Lib {
             double res = -999;
             using (StreamReader reader = new StreamReader(path))
             {
-                string line;
-                while ((line = reader.ReadLine()) != null)
+                string line = reader.ReadLine();
+                string[] lines = line.Split(' ');
+                foreach (string data in lines)
                 {
-                    line = line.Replace(".", ",");
-                    double num = Math.Round(Convert.ToDouble(line), 3);
+                    string temp = data.Replace(".", ",");
+                    double num = Math.Round(Convert.ToDouble(temp), 3);
                     if (num > res && num % 10 == 0)
                     {
                         res = num;
