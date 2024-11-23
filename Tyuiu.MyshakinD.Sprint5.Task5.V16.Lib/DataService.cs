@@ -11,9 +11,10 @@ namespace Tyuiu.MyshakinD.Sprint5.Task5.V16.Lib {
                 while ((line = reader.ReadLine()) != null)
                 {
                     line = line.Replace(".", ",");
-                    if (Convert.ToDouble(line) > res && Convert.ToDouble(line) % 10 == 0)
+                    double num = Math.Round(Convert.ToDouble(line), 3);
+                    if (num > res && num % 10 == 0)
                     {
-                        res = Convert.ToDouble(line);
+                        res = num;
                     }
                 }
             }
