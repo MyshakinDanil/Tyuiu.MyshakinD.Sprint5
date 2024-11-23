@@ -8,7 +8,7 @@ namespace Tyuiu.MyshakinD.Sprint5.Task5.V16.Lib {
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
-                while ((line = reader.ReadLine()) != null)
+                while ((line = reader.ReadLine()) != null
                 {
                     line = line.Replace(".", ",");
                     if (Convert.ToDouble(line) > res && Convert.ToDouble(line) % 10 == 0)
