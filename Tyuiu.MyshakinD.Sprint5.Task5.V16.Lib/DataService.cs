@@ -13,7 +13,7 @@ namespace Tyuiu.MyshakinD.Sprint5.Task5.V16.Lib {
                 {
                     string temp = data.Replace(".", ",");
                     double num = Math.Round(Convert.ToDouble(temp), 3);
-                    if (num > res && num % 10 == 0)
+                    if (num > res && num % 10 == 0 && num != 0)
                     {
                         res = num;
                     }
